@@ -1,9 +1,22 @@
+
+
+
 $(document).ready(()=>{
     var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=yYK5jv0CIzQ0VMfIgccWfzvlsGY3yD3G&limit=1");
     xhr.done(function(data) {
-    
+   
     console.log("success got data", data);
 
+    var url = 'https://avatarfiles.alphacoders.com/822/82242.png';
+    //var url = 'data.data.images.original.url';
+    $(document).ready(function() {
+      var image = new Image();
+      image.src = url;
+      $('#container').append(image);
+    });
+
+
+//document.getElementById("test").src=data.data.images.original.url
 
    
 
