@@ -1,7 +1,11 @@
-
-
 $(document).ready(()=>{
+var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=yYK5jv0CIzQ0VMfIgccWfzvlsGY3yD3G&limit=5");
+xhr.done(function(data) { console.log("success got data", data); });
 
+
+})
+
+/*
     $("#submit").click(()=>{
        let userInput = $("#search").val() 
        //alert(userInput) 
@@ -20,11 +24,11 @@ $(document).ready(()=>{
     })
    
     })
-
+*/
    
 
 
-})
+
 
 //var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=YOUR_API_KEY&limit=5");
 //xhr.done(function(data) { console.log("success got data", data); });
