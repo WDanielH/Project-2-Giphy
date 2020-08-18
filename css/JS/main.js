@@ -2,9 +2,12 @@
 
 
 document.addEventListener('DOMContentLoaded', function () {
-	q = "ryan gosling"; // search query
-	
-	request = new XMLHttpRequest;
+    
+    $("#submit").click(()=>{
+     let q =  $("#search").val()
+     alert(q)  
+
+     request = new XMLHttpRequest;
 	request.open('GET', 'http://api.giphy.com/v1/gifs/random?api_key=yYK5jv0CIzQ0VMfIgccWfzvlsGY3yD3G&tag='+q, true);
 	
 	request.onload = function() {
@@ -22,6 +25,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	};
 
 	request.send();
+
+    });
+    
+    //q = "ryan gosling"; // search query
+	
+	
 });
 
 
