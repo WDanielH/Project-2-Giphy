@@ -4,11 +4,12 @@
 document.addEventListener('DOMContentLoaded', function () {
     
     $("#submit").click(()=>{
-     let q =  $("#search").val()
+     let query =  $("#search").val()
+     let quantity = $("#quantity").val()
      //alert(q)  
 
      request = new XMLHttpRequest;
-	request.open('GET', 'http://api.giphy.com/v1/gifs/random?api_key=yYK5jv0CIzQ0VMfIgccWfzvlsGY3yD3G&tag='+q, true);
+	request.open('GET', 'http://api.giphy.com/v1/gifs/random?api_key=yYK5jv0CIzQ0VMfIgccWfzvlsGY3yD3G&tag='+query, true);
 	
 	request.onload = function() {
 		if (request.status >= 200 && request.status < 400){
