@@ -6,12 +6,15 @@ document.addEventListener('DOMContentLoaded', function () {
      let quantity = $("#quantity").val()
      //alert(q)  
      
-     var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=yYK5jv0CIzQ0VMfIgccWfzvlsGY3yD3G&limit=1");
+     var xhr = $.get("http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=yYK5jv0CIzQ0VMfIgccWfzvlsGY3yD3G&limit=2");
     xhr.done(function(data) {
    
     //console.log("success got data", data);
     console.log(data.data[0].images.original.url);
-    $("body").append('<center><img src = "'+data.data[0].images.original.url+'"  title="GIF via Giphy"></center>')
+    for(i=0;i<quantity;i++){
+        $("body").append('<center><img src = "'+data.data[i].images.original.url+'"  title="GIF via Giphy"></center>')
+    }
+    
     
     })
 })
