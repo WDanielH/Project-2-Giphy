@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
      let quantity = $("#quantity").val()
      //alert(q)  
      
-     var xhr = $.get('http://api.giphy.com/v1/gifs/search?q="'+query+'"&api_key=yYK5jv0CIzQ0VMfIgccWfzvlsGY3yD3G&limit="'+quantity+'"');
+     var xhr = $.get('http://api.giphy.com/v1/gifs/search?q="'+query+'"&api_key=yYK5jv0CIzQ0VMfIgccWfzvlsGY3yD3G&limit="'+quantity+'"&rating=pg');
     xhr.done(function(data) {
    
     //console.log("success got data", data);
