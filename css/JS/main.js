@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     
     $("#submit").click(()=>{
+      $("#results").empty();
      let query =  $("#search").val() //to do - validate
      let quantity = $("#quantity").val() //to do min and prefill
           
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
    
       console.log(data.data[0].images.original.url);
     for(i=0;i<quantity;i++){
-        $("body").append('<center><img src = "'+data.data[i].images.original.url+'"  title="GIF via Giphy"></center>')
+        $("#results").append('<center><img src = "'+data.data[i].images.original.url+'"  title="GIF via Giphy"></center>')
     }
     
     
