@@ -1,4 +1,32 @@
 
+.gif-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  max-width:100%;
+    height:auto;
+}
+/*
+
+
+
+
 body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   text-transform: uppercase;
@@ -9,7 +37,7 @@ body {
      background: #6B949F;
      color: white;
      display: grid;
-     grid-template-columns: 25% 50% 25%;
+     grid-template-columns: 33% 33% 33%;
     // transform: rotate(-45deg);
     }
    .header, .footer, .left-column, .center-column, .right-column {
@@ -42,7 +70,19 @@ body {
   flex-wrap: wrap;
 }
 
-#results img {
-  max-height:200px;
+
+#resultsL img {
+    max-width:100%;
+    height:auto;
+}
+
+#resultsM img {
+  max-width:100%;
+  height:auto;
+}
+
+#resultsR img {
+  max-width:100%;
+  height:auto;
 }
 */
