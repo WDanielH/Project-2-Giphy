@@ -1,14 +1,31 @@
 
 #top-nav-bar {
   background-color: #FF9104;
+  color: whitesmoke;
   width: 100%;
   height: 70px;
   border-radius: 0 10px 0 0;
+  li {
+  
+    display: inline;
+    font-family: 'Impact';
+    font-size: 22px;
+    a {
+     
+      color: #f2f2f2;
+      text-decoration: none;
+      padding: 14px;
+      &:hover {
+        background-color: #111;
+}       }
+}
 }
 
-#nav-label{
-  padding-top: 5px;
-  padding-left: 80%;
+
+
+#nav-links{
+  padding-top: 40px;
+  padding-left: 0%;
 }
 
 body {
@@ -31,6 +48,20 @@ Input {
   font-size: 39px;
   padding-bottom: 4px;
   font-family: 'Impact';
+}
+
+button {
+  margin-left: 15px;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 39px;
+  padding-bottom: 4px;
+  font-family: 'Impact';
+}
+
+
+button:hover {
+  background-color: #FF9104;
 }
 
 .gif-grid {
