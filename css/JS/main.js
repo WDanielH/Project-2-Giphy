@@ -37,4 +37,4 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 })
 
-// Needs to be done: - title bar, formatting, some quality of life items, ie clearing old gifs 
+// Needs to be done: - hamburger
