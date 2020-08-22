@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     
     $("#submit").click(()=>{
-      $("#results").empty();
+      $("#resultsL").empty();
       $("#resultsM").empty();
       $("#resultsR").empty();
      let query =  $("#search").val() //to do - validate
@@ -12,13 +12,17 @@ document.addEventListener('DOMContentLoaded', function () {
     xhr.done(function(data) {
    
       console.log(data.data[0].images.original.url);
-    for(i=0;i<quantity;i=i+1){
-        
+    for(i=0;i<quantity;i=i+3){
         //$("#results").append('<img src = "'+data.data[i].images.original.url+'"  title="GIF via Giphy">')
-        //$("#results").append('<div class="grid-item"><img src = "'+data.data[i].images.original.url+'"  title="GIF via Giphy"></div>')
-        $("#resultsL").append('<div class="grid-item">*</div>')
-        $("#resultsM").append('<div class="grid-item">*</div>')
-        $("#resultsR").append('<div class="grid-item">*</div>')
+        $("#resultsL").append('<div class="grid-item"><img src = "'+data.data[i].images.original.url+'"  title="GIF via Giphy"></div>')
+      }
+      for(i=1;i<quantity;i=i+3){
+        //$("#results").append('<img src = "'+data.data[i].images.original.url+'"  title="GIF via Giphy">')
+        $("#resultsM").append('<div class="grid-item"><img src = "'+data.data[i].images.original.url+'"  title="GIF via Giphy"></div>')
+      }
+      for(i=2;i<quantity;i=i+3){
+        //$("#results").append('<img src = "'+data.data[i].images.original.url+'"  title="GIF via Giphy">')
+        $("#resultsR").append('<div class="grid-item"><img src = "'+data.data[i].images.original.url+'"  title="GIF via Giphy"></div>')
       }
    
    
