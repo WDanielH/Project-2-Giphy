@@ -20,6 +20,7 @@ body {
   padding-bottom: 4px; }
 
 Input {
+  margin-left: 15px;
   padding-top: 10px;
   padding-left: 10px;
   font-size: 39px;
