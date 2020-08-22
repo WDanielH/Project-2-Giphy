@@ -1,87 +1,36 @@
-nav ul {
-  margin: 0;
-  padding: 6px;
-  list-style: none; }
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-transform: uppercase; }
 
-nav li {
-  display: inline-block; }
-
-nav a {
-  display: block;
-  padding: 6px 12px;
-  text-decoration: none; }
-
-.row:after {
-  display: block;
-  clear: both;
-  content: ''; }
-
-.row + .row {
-  margin-top: 3%; }
-
-[class^="col-"] {
-  float: left;
-  margin-right: 3%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-  [class^="col-"]:last-child {
-    margin-right: 0%; }
+@supports (display: grid) {
+  .l-grid {
+    background: #6B949F;
+    color: white;
+    display: grid;
+    grid-template-columns: 25% 50% 25%; }
+  .header, .footer, .left-column, .center-column, .right-column {
+    margin: 5px;
+    padding: 30px;
+    text-align: center; }
+  .header, .footer {
+    background: #265B6A;
+    grid-column-start: 1;
+    grid-column-end: end; }
+  .left-column {
+    background: #452F74; }
+  .center-column {
+    background: #AA7239; }
+  .right-column {
+    background: #729C34; } }
 
 /*
-.col-1 { width:5.583333333333333%; }
-.col-2 { width:14.16666666666667%; }
-.col-3 { width:22.75%; }
-.col-4 { width:31.33333333333333%; }
-.col-5 { width:39.91666666666667%; }
-.col-6 { width:48.5%; }
-.col-7 { width:57.08333333333333%; }
-.col-8 { width:65.66666666666666%; }
-.col-9 { width:74.25%; }
-.col-10 { width:82.83333333333333%; }
-.col-11 { width:91.41666666666666%; }
-.col-12 { width:100%; }
-*/
-.col-1 {
-  width: 5.58333%; }
-
-.col-2 {
-  width: 14.16667%; }
-
-.col-3 {
-  width: 22.75%; }
-
-.col-4 {
-  width: 31.33333%; }
-
-.col-5 {
-  width: 39.91667%; }
-
-.col-6 {
-  width: 48.5%; }
-
-.col-7 {
-  width: 57.08333%; }
-
-.col-8 {
-  width: 65.66667%; }
-
-.col-9 {
-  width: 74.25%; }
-
-.col-10 {
-  width: 82.83333%; }
-
-.col-11 {
-  width: 91.41667%; }
-
-.col-12 {
-  width: 100%; }
-
 #results {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; }
+  display:flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+}
 
 #results img {
-  max-height: 200px; }
+  max-height:200px;
+}
+*/

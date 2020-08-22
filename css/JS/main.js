@@ -2,7 +2,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     
     $("#submit").click(()=>{
-      $("#results").empty();
+      $("#resultsL").empty();
+      $("#resultsM").empty();
+      $("#resultsR").empty();
      let query =  $("#search").val() //to do - validate
      let quantity = $("#quantity").val() //to do min and prefill
           
@@ -10,9 +12,20 @@ document.addEventListener('DOMContentLoaded', function () {
     xhr.done(function(data) {
    
       console.log(data.data[0].images.original.url);
-    for(i=0;i<quantity;i++){
-        $("#results").append('<center><img src = "'+data.data[i].images.original.url+'"  title="GIF via Giphy"></center>')
-    }
+    for(i=0;i<quantity;i=i+3){
+        $("#resultsL").append('<center><img src = "'+data.data[i].images.original.url+'"  title="GIF via Giphy"></center>')
+      }
+    for(i=1;i<quantity;i=i+3){
+        $("#resultsM").append('<center><img src = "'+data.data[i].images.original.url+'"  title="GIF via Giphy"></center>')
+      }
+    for(i=2;i<quantity;i=i+3){
+        $("#resultsR").append('<center><img src = "'+data.data[i].images.original.url+'"  title="GIF via Giphy"></center>')
+      }
+
+
+      
+
+    
     
     
     })
