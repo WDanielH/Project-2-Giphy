@@ -11,9 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
   
 function checkSize(){
   if ($(".sampleClass").css("float") == "none" ){
-      // your code here
       $("#submit").html("TEST"); //THIS WORKS
   }
+  if ($(".sampleClass").css("float") == "left" ){
+    $("#submit").html("Make It So"); //THIS WORKS
+}
 }
 
     $("#submit").click(()=>{
