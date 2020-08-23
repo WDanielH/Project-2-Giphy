@@ -36,7 +36,7 @@ $("#submit").click(()=>{
      let query =  $("#search").val() 
      let quantity = $("#quantity").val() 
           
-     var xhr = $.get('http://api.giphy.com/v1/gifs/search?q="'+query+'"&api_key=yYK5jv0CIzQ0VMfIgccWfzvlsGY3yD3G&limit="'+quantity+'"&rating=pg');
+     var xhr = $.get('https://api.giphy.com/v1/gifs/search?q="'+query+'"&api_key=yYK5jv0CIzQ0VMfIgccWfzvlsGY3yD3G&limit="'+quantity+'"&rating=pg');
     xhr.done(function(data) {
    
       console.log(data.data[0].images.original.url);
