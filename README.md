@@ -24,3 +24,4 @@ I am pretty happy with the funcationality of this site but some things I would d
 - additional themeing to make the site look more Star Trek would be fun 
 - the vertical stacking nav bar in mobile view is very basic, id like to implement a slicker looking navbar 
 - adding animation to the hamburger button would also be nice
+- i would like to implement a third layout for tablets that displays in two columns instead of one or three
