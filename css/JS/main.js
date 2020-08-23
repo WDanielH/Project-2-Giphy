@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return $('#mobile-indicator').is(':visible');
     }
     if ( $('#mobile-indicator').is( 'visible' ) ) {
-      $( "#submit" ).text( "Test" );
+      $("#SUBMIT").html("TEST");
     }
     
      
@@ -35,10 +35,11 @@ document.addEventListener('DOMContentLoaded', function () {
         $("#resultsR").append('<div class="grid-item"><center><img src = "'+data.data[i].images.original.url+'"  title="GIF via Giphy"></center></div>')
       }
    
-        $("#resultsL").append('<div class="grid-item">')
-        $("#resultsM").append('<div class="grid-item">')
-        $("#resultsM").append('<div class="grid-item"><center><img src = "Assets/PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif"</center></div>')
-        $("#resultsR").append('<div class="grid-item">')
+      $("#resultsL").append('<div class="grid-item">')
+      $("#resultsM").append('<div class="grid-item">')
+      $("#resultsR").append('<div class="grid-item">')
+      $("#resultsR").append('<div class="grid-item"><center><img src = "Assets/PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif"</center></div>')
+        
 
         //<img src = "Assets\PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif"
         //alt = "Powered by GIPHY" />
