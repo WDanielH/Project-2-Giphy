@@ -17,17 +17,14 @@ function checkSize(){
     $("#submit").html("Make It So"); //THIS WORKS
 }
 }
+$("#burger").click(()=>{
+  $('#nav-links').toggle();
+})
 
-    $("#submit").click(()=>{
-     
-      function isMobileWidth() {
-        return $('#mobile-indicator').is(':visible');
-    }
+
+
+$("#submit").click(()=>{
     
-      if ( $('#mobile-indicator').is( 'visible' ) ) {
-        $("#submit").html("TEST"); //THIS WORKS
-      }
-     
       $('img').remove()
       $("#resultsL").empty();
       $("#resultsM").empty();

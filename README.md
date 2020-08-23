@@ -21,4 +21,6 @@ Mobile (320px and below)
 10) Your site title and navbar stack vertically
 11) Your navigation items stack vertically
 
+*** Items I'd like to implement ***
+1) My solution to append the powered by giphy logo doenst look great in mobile. (I append a row of empty divs to the grid and place the giphy logo in the right col. In mobile view tis results in two blank squares in the middle of the results rather than the top). I believe I could fix this with using the same @media check to prevent the appending
 

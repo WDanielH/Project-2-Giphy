@@ -1,5 +1,5 @@
 
-#top-nav-bar {
+.top-nav-bar {
   background-color: #FF9104;
   color: whitesmoke;
   width: 100%;
@@ -14,17 +14,20 @@
      
       color: #f2f2f2;
       text-decoration: none;
-      padding: 14px;
-      &:hover {
-        background-color: #111;
-}       }
+    padding: 14px;
+     &:hover {
+     background-color: #111;
+}      
+}
 }
 }
 
-#nav-links{
-  padding-top: 40px;
-  padding-left: 0%;
+.top-nav-bar #nav-links{
+  padding-top: 20px;
+  padding-left: 0px;
+  display: block;
 }
+
 
 body {
   background-color: black;
@@ -48,7 +51,7 @@ Input {
   font-family: 'Impact';
 }
 
-button {
+#submit {
   margin-left: 15px;
   padding-top: 10px;
   padding-left: 10px;
@@ -57,6 +60,13 @@ button {
   font-family: 'Impact';
 }
 
+#burger {
+  margin-top:20px;
+  margin-right:20px;
+ float:right;
+  font-size: 20px;
+  font-family: 'Impact';
+}
 
 button:hover {
   background-color: #FF9104;
@@ -107,3 +117,4 @@ object-fit:scale-down;
 @media only screen and (max-width: 632px){
 	.mobileCheck {float:none;}
 }
+
