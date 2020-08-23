@@ -11,10 +11,13 @@ document.addEventListener('DOMContentLoaded', function () {
   
 function checkSize(){
   if ($(".mobileCheck").css("float") == "none" ){
-      $("#submit").html("TEST"); //THIS WORKS
+    
+      $('#burger').show();
   }
   if ($(".mobileCheck").css("float") == "left" ){
-    $("#submit").html("Make It So"); //THIS WORKS
+    
+    $('#burger').hide();
+
 }
 }
 $("#burger").click(()=>{
