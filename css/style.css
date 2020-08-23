@@ -8,7 +8,7 @@
     display: block;
     font-family: 'Impact';
     font-size: 22px; }
-    @media only screen and (min-width: 633px) {
+    @media only screen and (min-width: 670px) {
       .top-nav-bar li {
         display: inline; } }
     .top-nav-bar li a {
@@ -21,7 +21,7 @@
 .top-nav-bar #nav-links {
   padding-left: 0px;
   display: block; }
-  @media only screen and (min-width: 633px) {
+  @media only screen and (min-width: 670px) {
     .top-nav-bar #nav-links {
       padding-top: 40px; } }
 
@@ -62,7 +62,7 @@ Input {
 button:hover {
   background-color: #FF9104; }
 
-@media only screen and (min-width: 633px) {
+@media only screen and (min-width: 671px) {
   .gif-grid {
     display: grid;
     grid-template: 300px /auto auto auto;
@@ -84,13 +84,13 @@ img {
 #mobile-indicator {
   display: none; }
 
-@media (max-width: 632px) {
+@media (max-width: 670px) {
   #mobile-indicator {
     display: block; } }
 
 .mobileCheck {
   float: left; }
 
-@media only screen and (max-width: 632px) {
+@media only screen and (max-width: 670px) {
   .mobileCheck {
     float: none; } }
