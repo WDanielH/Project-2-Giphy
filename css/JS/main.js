@@ -25,12 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
         $("#resultsR").append('<div class="grid-item"><center><img src = "'+data.data[i].images.original.url+'"  title="GIF via Giphy"></center></div>')
       }
    
-   
+        $("#resultsL").append('<div class="grid-item">')
+        $("#resultsM").append('<div class="grid-item">')
+        $("#resultsR").append('<div class="grid-item">')
 
-
-      
-
-    
     
     
     })
