@@ -1,22 +1,37 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     
+  $(document).ready(function() {
+    // run test on initial page load
+    checkSize();
+
+    // run test on resize of the window
+    $(window).resize(checkSize);
+});
+  
+function checkSize(){
+  if ($(".sampleClass").css("float") == "none" ){
+      // your code here
+      $("#submit").html("TEST"); //THIS WORKS
+  }
+}
 
     $("#submit").click(()=>{
+     
       function isMobileWidth() {
         return $('#mobile-indicator').is(':visible');
     }
-    if ( $('#mobile-indicator').is( 'visible' ) ) {
-      $("#SUBMIT").html("TEST");
-    }
     
+      if ( $('#mobile-indicator').is( 'visible' ) ) {
+        $("#submit").html("TEST"); //THIS WORKS
+      }
      
       $('img').remove()
       $("#resultsL").empty();
       $("#resultsM").empty();
       $("#resultsR").empty();
-     let query =  $("#search").val() //to do - validate
-     let quantity = $("#quantity").val() //to do min and prefill
+     let query =  $("#search").val() 
+     let quantity = $("#quantity").val() 
           
      var xhr = $.get('http://api.giphy.com/v1/gifs/search?q="'+query+'"&api_key=yYK5jv0CIzQ0VMfIgccWfzvlsGY3yD3G&limit="'+quantity+'"&rating=pg');
     xhr.done(function(data) {
