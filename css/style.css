@@ -81,9 +81,9 @@ img {
   #mobile-indicator {
     display: block; } }
 
-.sampleClass {
+.mobileCheck {
   float: left; }
 
 @media only screen and (max-width: 632px) {
-  .sampleClass {
+  .mobileCheck {
     float: none; } }

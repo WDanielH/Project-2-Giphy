@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
 });
   
 function checkSize(){
-  if ($(".sampleClass").css("float") == "none" ){
+  if ($(".mobileCheck").css("float") == "none" ){
       $("#submit").html("TEST"); //THIS WORKS
   }
-  if ($(".sampleClass").css("float") == "left" ){
+  if ($(".mobileCheck").css("float") == "left" ){
     $("#submit").html("Make It So"); //THIS WORKS
 }
 }
