@@ -52,9 +52,13 @@ $("#submit").click(()=>{
         $("#resultsR").append('<div class="grid-item"><center><img src = "'+data.data[i].images.original.url+'"  title="GIF via Giphy"></center></div>')
       }
    
-      $("#resultsL").append('<div class="grid-item">')
-      $("#resultsM").append('<div class="grid-item">')
-      $("#resultsR").append('<div class="grid-item">')
+      if ($(".mobileCheck").css("float") == "left" ){
+    
+        $("#resultsL").append('<div class="grid-item">')
+        $("#resultsM").append('<div class="grid-item">')
+        $("#resultsR").append('<div class="grid-item">')
+      }
+     
       $("#resultsR").append('<div class="grid-item"><center><img src = "Assets/PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif"</center></div>')
         
 
