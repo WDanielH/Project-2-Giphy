@@ -54,13 +54,7 @@ button:hover {
     display: grid;
     grid-template: 300px /auto auto auto;
     background-color: black;
-    padding: 0px;
-    /*
-    @media only screen and (max-width: 632px) {
-      /* For mobile phones: 
-      grid-template-columns: none;
-    }
-    */ } }
+    padding: 0px; } }
 
 .grid-item {
   background-color: rgba(0, 0, 0, 0);
