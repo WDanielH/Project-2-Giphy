@@ -7,7 +7,10 @@
   border-radius: 0 10px 0 0;
   li {
   
-    display: inline;
+    display: block;
+    @media only screen and (min-width:633px){
+      display:inline;
+    }
     font-family: 'Impact';
     font-size: 22px;
     a {

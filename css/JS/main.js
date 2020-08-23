@@ -17,6 +17,7 @@ function checkSize(){
   if ($(".mobileCheck").css("float") == "left" ){
     
     $('#burger').hide();
+    $('#nav-links').show();
 
 }
 }
