@@ -1,7 +1,16 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     
+
     $("#submit").click(()=>{
+      function isMobileWidth() {
+        return $('#mobile-indicator').is(':visible');
+    }
+    if ( $('#mobile-indicator').is( 'visible' ) ) {
+      $( "#submit" ).text( "Test" );
+    }
+    
+     
       $('img').remove()
       $("#resultsL").empty();
       $("#resultsM").empty();

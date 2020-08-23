@@ -70,6 +70,10 @@ button:hover {
   padding: 0px;
   //grid-template-rows:max-content
   //grid-auto-rows: 1fr;
+  @media only screen and (max-width: 632px) {
+    /* For mobile phones: */
+    grid-template-columns: none;
+  }
 }
 
 
@@ -99,4 +103,12 @@ max-height:300px;
 object-fit:scale-down;  
 }
 
+#mobile-indicator {
+  display: none;
+}
 
+@media (max-width: 632px) {
+  #mobile-indicator {
+      display: block;
+  }
+}

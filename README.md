@@ -18,9 +18,7 @@ Site-wide
 Here is a helpful video!
 
 Mobile (320px and below)
-Use a @media query to ensure that :
 10) Your site title and navbar stack vertically
 11) Your navigation items stack vertically
-12) Your images stack vertically in a single column
 
-I think I need to append divs to the colums and then append images to the divs. set a fixed size for the div and set the image to scale inside it.
+
