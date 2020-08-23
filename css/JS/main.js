@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
       }
    
         $("#resultsL").append('<div class="grid-item">')
+        $("#resultsM").append('<div class="grid-item">')
         $("#resultsM").append('<div class="grid-item"><center><img src = "Assets/PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif"</center></div>')
-        //$("#resultsM").append('<div class="grid-item">')
         $("#resultsR").append('<div class="grid-item">')
 
         //<img src = "Assets\PoweredBy_200_Horizontal_Light-Backgrounds_With_Logo.gif"
